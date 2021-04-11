@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+	<title>DAYBEAU</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" /> 
+	<link rel="stylesheet" type="text/css" href="./font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="./css/font.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./css/slide.css" />
+	<link rel="shortcut icon" href="./ico/favicon.png">
+
+	<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="./js/ui.js"></script>
+</head>
+
+<body>
+	<div class="wrap">
+
+		<!-- 슬라이드 메뉴 -->
+		<div onclick="history.back();" class="page_cover"></div>
+		<div id="menu">
+			<div class="menu_wrap">
+				<section class="menu_top">
+					<div onclick="history.back();" class="menu_close"></div>
+					<div class="menu_person">
+						<div class="me_custom">
+							<dl class="text">
+								<dt>어서오세요^^ 고객님</dt>
+								<dd>로그인 하시면 더 많은 혜택과 <br>문의가 가능합니다.</dd>
+							</dl>
+							<div class="custom">
+								<img src="./images/icon_custom.png" />
+							</div>
+						</div><!-- me_custom -->
+						<div class="me_btnzone">
+							<a href="login.html">로그인</a>
+							<a href="sign_up.html">회원가입</a>
+						</div><!-- me_btnzone -->
+					</div><!-- menu_person -->
+				</section><!-- menu_top -->
+				<section class="menu_bottom">
+					<div class="Icon_mob">
+						<div class="link">
+							<a href="about.html">
+								<img class="me_logo" src="./images/day_logo.png" />
+								<span></span>
+							</a>
+						</div><!-- link -->
+						<div class="link">
+							<a href="store.html">
+								Store<span></span>
+							</a>
+						</div><!-- link -->
+						<div class="link">
+							<a href="main.html">
+								Home<span class="space_line"></span>
+							</a>
+						</div><!-- link -->
+						<div class="link">
+							<a href="index.html">
+								Limited Edition<span></span>
+							</a>
+						</div><!-- link -->
+						<div class="link">
+							<a class="selb_link">
+								Item<span></span>
+							</a>
+							<ul class="add_menu">
+								<li><a href="item_all.html">All</a></li>
+								<li><a>Bracelet</a></li>
+								<li><a>Earrings</a></li>
+								<li><a>Necklace</a></li>
+								<li><a>Ring</a></li>
+								<li><a>Wedding</a></li>
+							</ul>
+						</div><!-- link -->
+					</div><!-- Icon_mob -->
+					<div class="Icon_mob bottom_mob">
+						<div class="link">
+							<a href="question.html">
+								1:1 문의<span></span>
+							</a>
+						</div><!-- link -->
+						<div class="link">
+							<a href="visit.html">
+								방문예약<span></span>
+							</a>
+						</div><!-- link -->
+						<div class="link">
+							<a class="selb_link">
+								공지사항<span></span>
+							</a>
+							<ul class="add_menu">
+								<li><a href="noti_notice.html">공지사항</a></li>
+								<li><a href="noti_event.html">이벤트</a></li>
+							</ul>
+						</div><!-- link -->
+					</div><!-- Icon_mob -->
+				</section><!-- menu_bottom -->
+			</div><!-- menu_wrap -->
+		</div><!-- menu -->
+		<!-- 슬라이드 메뉴 End -->
+
+		<header>
+			<div class="top_util">
+				<a>오픈기념 도자기 케이스 증정</a>
+			</div><!-- top_util -->
+			<div class="header_line">
+				<div class="header_center">
+					<p class="menu_btn"></p>
+					<h1 class="logo">
+						<a href="main.html">
+							<img src="./images/day_logo.png" alt="DAYBEAU" />
+						</a>
+					</h1>
+					<div class="pop_search">
+						<div class="sr_wrap">
+							<input type="text">
+							<button class="pop_sr_btn" type="submit">검색</button>
+						</div><!-- sr_wrap -->
+					</div><!-- pop_search -->
+					<div class="my_right">
+						<p class="see_btn"></p>
+						<p class="my_btn">
+							<a href="mypage.html"></a>
+						</p>
+					</div><!-- my_right -->
+				</div><!-- header_center -->
+			</div><!-- header_line -->
+		</header>
+
+		<section class="Intro_wrap">
+
+			<article class="login_conts">
+				<h1 class="sub_title">로그인</h1>
+				<div class="form_group">
+					<div class="put_box">
+						<input class="put_wr" type="text" placeholder="ID">
+						<span class="icon"></span>
+					</div><!-- put_box -->
+					<div class="put_box">
+						<input class="put_wr" type="password" placeholder="PASSWORD">
+						<span class="icon key"></span>
+					</div><!-- put_box -->
+					<div class="put_line">
+						<label class="log_label"><input type="checkbox">아이디 저장</label>
+						<label class="log_label"><input type="checkbox">자동 로그인</label>
+					</div><!-- put_line -->
+					<div class="btn_zone fle_col">
+						<button class="btn_dark" type="submit" onclick="location.href='main.html'">로그인</button>
+						<a class="go_sign" href="sign_up.html">회원가입</a>
+					</div><!-- btn_zone -->
+				</div><!-- form_group -->
+			</article><!-- login_conts -->
+
+		</section><!-- Intro_wrap -->
+
+		<div class="totopshow">
+            <a href="#" class="back-to-top"><span class="fa fa-angle-up"></span></a>
+        </div>
+
+	</div><!-- wrap -->
+
+<script type="text/javascript" src="./js/slide.js"></script>
+</body>
+</html>

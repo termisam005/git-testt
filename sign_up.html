@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+	<title>DAYBEAU</title>
+	<meta name="keywords" content="" />
+	<meta name="description" content="" />
+	<link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" /> 
+	<link rel="stylesheet" type="text/css" href="./font-awesome/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="./css/font.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css" />
+	<link rel="stylesheet" type="text/css" href="./css/slide.css" />
+	<link rel="shortcut icon" href="./ico/favicon.png">
+
+	<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="./js/ui.js"></script>
+</head>
+
+<body>
+	<div class="wrap">
+
+		<!-- 슬라이드 메뉴 -->
+		<div onclick="history.back();" class="page_cover"></div>
+		<div id="menu">
+			<div class="menu_wrap">
+				<section class="menu_top">
+					<div onclick="history.back();" class="menu_close"></div>
+					<div class="menu_person">
+						<div class="me_custom">
+							<dl class="text">
+								<dt>어서오세요, 고객님</dt>
+								<dd>로그인 하시면 더 많은 혜택과 <br>문의가 가능합니다.</dd>
+							</dl>
+							<div class="custom">
+								<img src="./images/icon_custom.png" />
+							</div>
+						</div><!-- me_custom -->
+						<div class="me_btnzone">
+							<a href="login.html">로그인</a>
+							<a href="sign_up.html">회원가입</a>
+						</div><!-- me_btnzone -->
+					</div><!-- menu_person -->
+				</section><!-- menu_top -->
+				<section class="menu_bottom">
+					<div class="Icon_mob">
+						<div class="link">
+							<a href="about.html">
+								<img class="me_logo" src="./images/day_logo.png" />
+								<span></span>
+							</a>
+						</div><!-- link -->
+						<div class="link">
+							<a href="store.html">
+								Store<span></span>
+							</a>
+						</div><!-- link -->
+						<div class="link">
+							<a href="main.html">
+								Home<span class="space_line"></span>
+							</a>
+						</div><!-- link -->
+						<div class="link">
+							<a href="index.html">
+								Limited Edition<span></span>
+							</a>
+						</div><!-- link -->
+						<div class="link">
+							<a class="selb_link">
+								Item<span></span>
+							</a>
+							<ul class="add_menu">
+								<li><a href="item_all.html">All</a></li>
+								<li><a>Bracelet</a></li>
+								<li><a>Earrings</a></li>
+								<li><a>Necklace</a></li>
+								<li><a>Ring</a></li>
+								<li><a>Wedding</a></li>
+							</ul>
+						</div><!-- link -->
+					</div><!-- Icon_mob -->
+					<div class="Icon_mob bottom_mob">
+						<div class="link">
+							<a href="question.html">
+								1:1 문의<span></span>
+							</a>
+						</div><!-- link -->
+						<div class="link">
+							<a href="visit.html">
+								방문예약<span></span>
+							</a>
+						</div><!-- link -->
+						<div class="link">
+							<a class="selb_link">
+								공지사항<span></span>
+							</a>
+							<ul class="add_menu">
+								<li><a href="noti_notice.html">공지사항</a></li>
+								<li><a href="noti_event.html">이벤트</a></li>
+							</ul>
+						</div><!-- link -->
+					</div><!-- Icon_mob -->
+				</section><!-- menu_bottom -->
+			</div><!-- menu_wrap -->
+		</div><!-- menu -->
+		<!-- 슬라이드 메뉴 End -->
+
+		<header>
+			<div class="top_util">
+				<a>오픈기념 도자기 케이스 증정</a>
+			</div><!-- top_util -->
+			<div class="header_line">
+				<div class="header_center">
+					<p class="menu_btn"></p>
+					<h1 class="logo">
+						<a href="main.html">
+							<img src="./images/day_logo.png" alt="DAYBEAU" />
+						</a>
+					</h1>
+					<div class="pop_search">
+						<div class="sr_wrap">
+							<input type="text">
+							<button class="pop_sr_btn" type="submit">검색</button>
+						</div><!-- sr_wrap -->
+					</div><!-- pop_search -->
+					<div class="my_right">
+						<p class="see_btn"></p>
+						<p class="my_btn">
+							<a href="mypage.html"></a>
+						</p>
+					</div><!-- my_right -->
+				</div><!-- header_center -->
+			</div><!-- header_line -->
+		</header>
+
+		<section class="Intro_wrap">
+
+			<article class="sign_conts">
+				<h1 class="sub_title">회원가입</h1>
+				<form>
+				<div class="sign_zone">
+					<div class="gender_wrap">
+						<button type="button" class="gend_btn genbt01" onclick="check1()">여성</button>
+						<button type="button" class="gend_btn genbt02" onclick="check2()">남성</button>
+					</div><!-- gender_wrap -->
+					<div class="put_box wr_box">
+						<input class="put_wr" type="text" placeholder="생년월일 (주민등록번호 앞자리 6자)">
+					</div><!-- put_box -->
+				</div><!-- sign_zone -->
+				<div class="sign_zone">
+					<div class="sign_help">
+						<div class="put_box wr_box">
+							<input class="put_wr" type="text" placeholder="아이디">
+							<button class="wh_btn" type="button">중복확인</button>
+						</div><!-- put_box -->
+						<p class="tip">영문, 숫자로만 6~20자</p>
+					</div><!-- sign_help -->
+					<div class="sign_help">
+						<div class="put_box wr_box">
+							<input class="put_wr" type="password" placeholder="비밀번호">
+						</div><!-- put_box -->
+						<p class="tip">영문, 숫자, 특수문자로만 8~20자</p>
+					</div><!-- sign_help -->
+					<div class="sign_help">
+						<div class="put_box wr_box">
+							<input class="put_wr" type="password" placeholder="비밀번호 확인">
+						</div><!-- put_box -->
+						<p class="tip">영문, 숫자, 특수문자로만 8~20자</p>
+					</div><!-- sign_help -->
+				</div><!-- sign_zone -->
+				<div class="sign_zone">
+					<div class="sign_help">
+						<div class="put_box wr_box">
+							<input class="put_wr put_phone" type="text" placeholder="휴대폰번호">
+							<button class="wh_btn" type="button">인증번호 전송</button>
+						</div><!-- put_box -->
+					</div><!-- sign_help -->
+					<div class="sign_help">
+						<div class="put_box wr_box">
+							<input class="put_wr" type="text" placeholder="인증확인">
+							<button class="wh_btn" type="button">인증확인</button>
+						</div><!-- put_box -->
+					</div><!-- sign_help -->
+				</div><!-- sign_zone -->
+				<div class="sign_zone">
+					<div class="sign_help">
+						<div class="put_box wr_box">
+							<input class="put_wr" type="text" placeholder="우편번호">
+							<button class="wh_btn" type="button">주소찾기</button>
+						</div><!-- put_box -->
+					</div><!-- sign_help -->
+					<div class="sign_help">
+						<div class="put_box wr_box">
+							<input class="put_wr w-100" type="text" placeholder="상세주소">
+						</div><!-- put_box -->
+					</div><!-- sign_help -->
+				</div><!-- sign_zone -->
+
+				<div class="Agree_group">
+					<ul>
+						<li class="impact">
+							<label>
+								<input type="checkbox">모두 동의합니다.
+							</label>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox">(필수) 이용약관 동의
+							</label>
+							<a>상세보기</a>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox">(필수) 개인정보 처리방침 동의
+							</label>
+							<a>상세보기</a>
+						</li>
+						<li>
+							<label>
+								<input type="checkbox">(선택) 마케팅 정보수신 동의
+							</label>
+							<a>상세보기</a>
+						</li>
+					</ul>
+				</div><!-- Agree_group -->
+				</form>
+				<div class="btn_zone fle_row">
+					<button class="btn_dark" type="submit" onclick="layer_join();">가입하기</button>
+					<button class="btn_dark btn_wh" type="submit" onclick="location.href='index.html'">취소</button>
+				</div><!-- btn_zone -->
+			</article><!-- sign_conts -->
+
+		</section><!-- Intro_wrap -->
+
+		<div class="totopshow">
+            <a href="#" class="back-to-top"><span class="fa fa-angle-up"></span></a>
+        </div>
+
+	</div><!-- wrap -->
+
+<!-- 가입하기 팝업 -->
+<script src="./js/jquery.bpopup.min.js"></script>
+<script>
+function layer_join() {	
+	$(".pop_join").bPopup();
+}
+</script>
+<div class="layer_pop pop_join">		
+    <div class="b-close close_circle">
+		<img src="./images/icon_check.png" />
+	</div><!-- b-close -->
+    <div class="popupCont">
+		<div class="caution">
+			<h3>
+				<b>신아영</b> 님!
+			</h3>
+			<p class="comment">데이뷰의 가족이 되신걸 환영합니다!</p>
+		</div><!-- caution -->
+		<div class="line">
+			<a class="okay" href="login.html">로그인</a>
+			<a class="cancel" href="main.html">메인페이지</a>
+		</div><!-- line -->
+	</div><!-- popupCont -->
+</div><!-- layer_pop -->
+
+<script type="text/javascript" src="./js/slide.js"></script>
+</body>
+</html>
